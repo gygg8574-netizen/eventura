@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="info/global.css">
+  <style id="sections-styles">
+/* CSS for section section:Header */
+#header {
+  padding-top: 18px;
+  margin-bottom: 40px;
+}
+
+.nav-bar {
+  border: 1px solid #ff0000;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-text {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+/* CSS for section section:Info */
+#info {
+  margin-bottom: 50px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+/* CSS for section section:About */
+#about {
+  margin-bottom: 80px;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.about-content {
+  flex: 1;
+  max-width: 500px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.card {
+  background-color: #d9d9d9;
+  border-radius: 71px;
+  padding: 40px;
+}
+
+.about-card {
+  min-height: 224px; /* Based on Figma height */
+  display: flex;
+  align-items: center;
+}
+
+.about-card p {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.about-image {
+  flex: 0 0 auto;
+  margin-top: 80px; /* Visual adjustment based on layout */
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about-content {
+    max-width: 100%;
+  }
+  
+  .about-image {
+    margin-top: 20px;
+  }
+}
+
+/* CSS for section section:Goals */
+#goals {
+  margin-bottom: 80px;
+}
+
+.goals-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.goals-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+}
+
+.icon-exclamation {
+  width: 60px;
+  height: 60px;
+}
+
+.icon-deco {
+  position: absolute;
+  right: -20px;
+  top: 0;
+}
+
+.goals-content {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.target-image-wrapper {
+  z-index: 2;
+  margin-right: -40px; /* Create overlap */
+  flex-shrink: 0;
+}
+
+.target-icon {
+  width: 261px;
+}
+
+.goals-card {
+  flex: 1;
+  padding: 50px 50px 50px 80px; /* Extra left padding for overlap */
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.goals-card p {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .goals-content {
+    flex-direction: column;
+  }
+  
+  .target-image-wrapper {
+    margin-right: 0;
+    margin-bottom: -40px;
+  }
+  
+  .goals-card {
+    padding: 60px 30px 30px 30px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
+
+/* CSS for section section:HowItWorks */
+#how-it-works {
+  margin-bottom: 80px;
+}
+
+.title-left {
+  margin-left: 20px;
+}
+
+.steps-card {
+  padding: 50px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.steps-card p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .title-left {
+    margin-left: 0;
+    text-align: center;
+  }
+  
+  .steps-card {
+    padding: 30px;
+  }
+  
+  .steps-card p {
+    font-size: 14px;
+  }
+}
+  </style>
+  <script src="info/global.js" defer></script>
+</head>
+<body>
+<section id="header">
+  <div class="container">
+    <nav class="nav-bar">
+      <a href="/" style="color: inherit; text-decoration: none;">[ГЛАВНАЯ]</a>
+      <a href="/colleges" style="color: inherit; text-decoration: none;">[КОЛЛЕДЖИ]</a>
+      <a href="/students" style="color: inherit; text-decoration: none;">[СТУДЕНТЫ]</a>
+      <a href="/info" style="color: inherit; text-decoration: none;">[ИНФО]</a>
+      <a href="/fun" style="color: inherit; text-decoration: none;">[FUN]</a>        
+    </nav>
+  </div>
+</section>
+<section id="info">
+  <div class="container">
+    <h1 class="page-title">ИНФОРМАЦИЯ</h1>
+  </div>
+</section>
+<section id="about">
+  <div class="container about-container">
+    <div class="about-content">
+      <h2 class="section-title">ЧТО ТАКОЕ EVENTURA?</h2>
+      <div class="card about-card">
+        <p class="text-pre">Цифровая платформа для учёта внеучебной
+активности студентов. Система баллов,
+рейтинги, события и достижения.</p>
+      </div>
+    </div>
+    <div class="about-image">
+      <img src="info/images/6_103.svg" alt="Dino Character">
+    </div>
+  </div>
+</section>
+<section id="goals">
+  <div class="container">
+    <div class="goals-header">
+      <div class="goals-title-wrapper">
+        <img src="info/images/6_127.svg" alt="Exclamation Icon" class="icon-exclamation">
+        <h2 class="section-title">ЦЕЛИ ПРОЕКТА:</h2>
+        <img src="info/images/13_19.svg" alt="" class="icon-deco">
+      </div>
+    </div>
+    
+    <div class="goals-content">
+      <div class="target-image-wrapper">
+        <img src="info/images/15_11.svg" alt="Target Icon" class="target-icon">
+      </div>
+      <div class="card goals-card">
+        <p class="text-pre">▣ Стимулировать участие в мероприятиях
+▣ Создать здоровую конкуренцию
+▣ Упростить учёт активностей
+▣ Поощрять самых активных</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="how-it-works">
+  <div class="container">
+    <h2 class="section-title title-left">КАК ЭТО РАБОТАЕТ?</h2>
+    <div class="card steps-card">
+      <p class="text-pre">1. РЕГИСТРАЦИЯ
+   ▸ Студент получает доступ к системе
+
+2. УЧАСТИЕ
+   ▸ Посещение мероприятий = баллы
+   ▸ Организация событий = дополнительные баллы
+
+3. РЕЙТИНГ
+   ▸ Личные и групповые рейтинги
+   ▸ Ежемесячные обновления
+
+4. НАГРАДЫ
+   ▸ Pixel-Pass коллекция значков
+   ▸ Призы для топ-студентов</p>
+    </div>
+  </div>
+</section>
+</body>
+</html>
