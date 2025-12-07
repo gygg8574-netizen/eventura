@@ -1,0 +1,1 @@
+// No interactive functionality required for this static layout.
